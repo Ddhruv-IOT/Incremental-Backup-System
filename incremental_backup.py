@@ -7,6 +7,7 @@ pendrive_dir = r"F:"
 file_modifcation_times = {}
 
 def take_inc_back_up(source_dir, pendrive_dir):
+    files_modified_count = 0
     for root, dirs, files in os.walk(source_dir):
         for file in files:
             source_file_path = os.path.join(root, file)
@@ -23,8 +24,10 @@ def take_inc_back_up(source_dir, pendrive_dir):
             if (not os.path.exists(destination_file_path) or file_modifcation_times[source_file_path] > os.path.getmtime(destination_file_path)):
                 shutil.copy2(source_file_path, destination_file_path)
                 print(f"{destination_file_path}, copied successfully!!")
+                files_modified_count += 1
             else:
                 print("Nothing to do... Already resolved!!")
-            
+    
+    print(f"Total files modified: {files_modified_count}")
 
 take_inc_back_up(source_dir, pendrive_dir)
