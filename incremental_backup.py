@@ -30,4 +30,12 @@ def take_inc_back_up(source_dir, pendrive_dir):
     
     print(f"Total files modified: {files_modified_count}")
 
-take_inc_back_up(source_dir, pendrive_dir)
+if __name__ == "__main__":
+    try: 
+        if not os.path.exists(source_dir):
+            raise Exception("Source directory does not exist!!")
+        if not os.path.exists(pendrive_dir):
+            raise Exception("Pendrive directory does not exist!! Check if pendrive is connected!!")
+        take_inc_back_up(source_dir, pendrive_dir)
+    except Exception as e:
+        print(e)
