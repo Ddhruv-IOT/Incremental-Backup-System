@@ -1,6 +1,10 @@
 # Incremental Backup System
 
 <!---[comment]: <>(![Incremental Backup System](https://github.com/your-username/incremental-backup-system/assets/your-image.png)) --->
+![Python 3.10](https://img.shields.io/badge/Python-3.10-blue) ![Maintenance](https://img.shields.io/badge/Maintained-Yes-brightgreen) ![License](https://img.shields.io/badge/License-MIT-red) ![Code Size](https://img.shields.io/github/languages/code-size/ddhruv-iot/incremental-backup-system?style=flat&label=Code%20Size&color=yellow)
+
+
+
 
 ## About Project
 
@@ -28,6 +32,13 @@ The Incremental Backup System works by analyzing the source directory and the de
 
 4. **Summary:** After the backup process is complete, the system provides a summary of the total number of files modified and copied.
 
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.10 or higher is installed on your system.
+
 ## Usage:
 
 To use this incremental backup system, follow these steps:
@@ -48,9 +59,20 @@ To use this incremental backup system, follow these steps:
 
 The system will create incremental backups, ensuring that only modified files are copied, making it an efficient solution for your backup needs.
 
-## Demo:
-[Link to Demo](https://your-demo-link.com)
-<br/>
+## Contributing
+
+If you would like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test them.
+4. Commit your changes with clear and concise commit messages.
+5. Push your branch to your fork.
+6. Create a pull request to the main repository's `main` branch.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 # Thank you
 
